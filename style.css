@@ -59,3 +59,16 @@ h1, h2, h3, h4, h5, h6, blockquote, caption, figcaption, p {
 .more-link {
 	display: block;
 }
+
+
+nav{
+	width: 100%; background-color: black; padding: none; margin: none;
+}
+
+ul{
+	list-style-type: none; display: inline-block; color: white;
+}
+
+li{
+	display: inline-block; margin: 10px;
+}
