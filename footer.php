@@ -1,4 +1,7 @@
-    
-    <h2 width="100%" style="background-color: black; color: white; margin-top: 45%; height: 100px; padding:20px">Copyright &copy; 2025</h2>
+<footer class="site-footer">
+    <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> | All rights reserved.</p>
+    <p><a href="#top" class="back-to-top">Back To Top</a></p>
+</footer>
+<?php wp_footer();?>
 </body>
 </html>

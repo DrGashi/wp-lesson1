@@ -6,5 +6,13 @@
     <title>DS Theme</title>
     <?php wp_head(); ?>
 </head>
-<body style="padding: none; margin: none;">
-    <?php wp_nav_menu(array("theme_location" => "primary")); 
+<body>
+    <nav class="site-nav">
+    <?php 
+    wp_nav_menu( array(
+        "theme_location" => "primary",
+        'menu_class' => 'main-menu'
+        )); 
+    ?>
+</nav>
+</header>
