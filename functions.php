@@ -1,6 +1,7 @@
 <?php
     function ds_style(){
         wp_enqueue_style('digitalschool-style', get_stylesheet_uri());
+        wp_enqueue_style('style' ,get_template_directory_uri()."/css/bootstrap.min.css" , false , '1.0' , 'all');
     }
     add_action('wp_enqueue_scripts', 'ds_style');
 
