@@ -16,6 +16,14 @@
         wp_enqueue_script('ds-js', get_theme_file_uri('js/main.js'), array(), 1.0, true);
     }
     add_action('wp_enqueue_scripts', 'ds_js');
+    add_action('wp_enqueue_scripts', function(){
+        if(is_page_template('aboutus.php')){
+            wp_enqueue_script(
+                'tailwind-play',
+                'https://cdn.tailwindcss.com'
+            );
+        }
+    });
 
     add_action('after_setup_theme', function(){
         add_theme_support('post-thumbnails');

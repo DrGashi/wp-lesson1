@@ -6,5 +6,6 @@
 <?php endwhile; else:?>
     <p>No posts found.</p>
 <?php endif; ?>
+
 </main>
 <?php get_footer(); ?>
