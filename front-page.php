@@ -33,10 +33,10 @@
                     <span class="age">8-11</span>
                 </h3>
                 <ul class="class-points">
-                    <li><strong>Content:</strong></li>
-                    <li><strong>Period:</strong></li>
-                    <li><strong>Intensity:</strong></li>
-                    <li><strong>Method</strong></li>
+                    <li><strong>Content:</strong>Learning the logic</li>
+                    <li><strong>Period:</strong>September-July</li>
+                    <li><strong>Intensity:</strong>3 times a week</li>
+                    <li><strong>Method</strong>Online or physically</li>
                 </ul>
             </li>
         </ul>
