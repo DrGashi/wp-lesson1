@@ -1,0 +1,76 @@
+body{
+    background-color: hsla(216, 23%, 8%, 1);
+    font-family: monospace;
+}
+.banner{
+    background-image: url("../images/AudiF1.png");
+    height: 80vh;
+    padding: 5%;
+    margin-bottom: 100px;
+}
+.banner h1{
+    margin-top: 600px;
+    font-size: 50px;
+}
+.banner h3{
+    font-size: 20px;
+}
+.banner h1, .banner h3{
+    color: white;
+}
+.banner-button{
+    background-color: rgb(91, 115, 146);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+}
+
+.current{
+
+}
+.current h1{
+    color: white;
+    font-size: 35px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.current img{
+    width: 98vw;
+    margin-top: 150px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card{
+    color: white;
+    width: 28vw;
+}
+.card img{
+    width: 100%;
+}
+.card .date{
+    margin-top: 10px;
+}
+.card .title{
+    font-size: 30px;
+}
+.card .desc{
+    font-size: 15px;
+    color: rgb(201, 201, 201);
+}
+.card a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+.card a::after{
+    content: ">";
+}
