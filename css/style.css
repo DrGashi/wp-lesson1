@@ -1,6 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: hsla(216, 23%, 8%, 1);
     font-family: monospace;
+    color: white;
 }
 .banner{
     background-image: url("../images/AudiF1.png");
@@ -19,34 +23,42 @@ body{
     color: white;
 }
 .banner-button{
-    background-color: rgb(91, 115, 146);
+    background-color: rgb(101, 112, 129);
     color: white;
     padding: 15px 20px;
     border: none;
     border-radius: 50px;
     font-size: 15px;
+    cursor: pointer;
+    border: 1px solid rgb(101, 112, 129);
+    transition: 0.5s all;
+}
+.banner-button:hover{
+    border: 1px solid rgb(101, 112, 129);
+    background-color: rgb(45, 49, 56);
 }
 
-.current{
-
+.card-section{
+    
 }
-.current h1{
+.card-section h1{
     color: white;
     font-size: 35px;
     font-weight: lighter;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
 }
-.current img{
+.card-section img{
     width: 98vw;
-    margin-top: 150px;
+    margin-top: 50px;
+    border-radius: 20px;
 }
 
 .cards{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 100px;
 }
 .card{
     color: white;
@@ -55,13 +67,10 @@ body{
 .card img{
     width: 100%;
 }
-.card .date{
-    margin-top: 10px;
-}
 .card .title{
     font-size: 30px;
 }
-.card .desc{
+.card .desc, .description{
     font-size: 15px;
     color: rgb(201, 201, 201);
 }
@@ -73,4 +82,36 @@ body{
 }
 .card a::after{
     content: ">";
+}
+
+.section-button{
+    display: flex;
+    justify-content: center;
+    margin-top: -70px;
+}
+
+.audi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card-section .image img, .description{
+    width: 40vw;
+}
+.description{
+    padding: 150px 100px;
+}
+
+.footer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.topics{
+    margin: 30px;
+}
+.topics a{
+    color: white;
+    text-decoration: none;
 }
