@@ -1,7 +1,7 @@
 html{
     scroll-behavior: smooth;
 }
-body{
+.main-cont{
     background-color: hsla(216, 23%, 8%, 1);
     font-family: monospace;
     color: white;
@@ -63,6 +63,7 @@ body{
 .card{
     color: white;
     width: 28vw;
+    height: 300px;
 }
 .card img{
     width: 100%;
@@ -104,9 +105,13 @@ body{
 
 .footer{
     background-color: black;
+}
+.top-footer, .bottom-footer{
+    background-color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 50px;
 }
 .topics{
     margin: 30px;
@@ -114,4 +119,21 @@ body{
 .topics a{
     color: white;
     text-decoration: none;
+}
+.footer .line{
+    background-color: gray;
+    height: 1px;
+    width: 80vw;
+    margin: 0 9vw;
+}
+.copyright{
+    margin-top: 15px;
+    color: rgba(252, 252, 253, 0.7);
+}
+.bottom-footer ul{
+    list-style-type: none;
+}
+.bottom-footer ul li{
+    display: inline-block;
+    margin: 0 10px;
 }

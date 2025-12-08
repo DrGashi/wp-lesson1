@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<div class="main-cont">
     <main>
         <section class="banner" id="banner">
             <h1>Formula 1®</h1>
@@ -28,6 +29,27 @@
                     <p class="desc">The brightest moments in Audi history involved daring leaps of imagination and innovation, cutting-edge technology, and groundbreaking design. The new design philosophy "The Radical Next" builds on this legacy and is based on four principles: clear, technical, intelligent, and emotional. Through the way Audi designs its vehicles, clarity will shape the company.</p>
                     <a href="">Read More </a>
                 </div>
+            </div>
+            <img src="<?php echo esc_url(get_theme_file_uri("images/Innovation.jpg")); ?>" alt="">
+        </section>
+        <section class="card-section">
+            <h1>Current topics from the world of Audi</h1>
+            <div class="cards">
+                <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+                <div class="card">
+                    <?php the_post_thumbnail(); ?>
+                    <span class="date">10/22/2025</span>
+                    <p class="title"><?php the_title();?></p>
+                    <p class="desc"><?php the_excerpt();?></p>
+                    <a href="<?php the_permalink(); ?>">Read More </a>
+                </div></article>
+                <?php endwhile; ?>
+                <nav class="pagination">
+                    <?php the_posts_pagination(); ?>
+                </nav>
+                <?php else: ?>
+                    <p>No posts found.</p>
+                <?php endif;?>
             </div>
             <img src="<?php echo esc_url(get_theme_file_uri("images/Innovation.jpg")); ?>" alt="">
         </section>
@@ -68,32 +90,51 @@
         </section>
     </main>
     <section class="footer">
-        <div class="topics">
-            <h2 class="title">Topics</h2>
-            <p>Company</p>
-            <p>Inovation</p>
-            <p>Sustainability</p>
-            <p>Careers</p>
-            <p>Audi in sport</p>
+        <div class="top-footer">
+            <div class="topics">
+                <h2 class="title">Topics</h2>
+                <p>Company</p>
+                <p>Inovation</p>
+                <p>Sustainability</p>
+                <p>Careers</p>
+                <p>Audi in sport</p>
+            </div>
+            <div class="topics">
+                <h2 class="title">AUDI AG</h2>
+                <p>Audi Report 2024</p>
+                <p>Documents & Policies</p>
+                <p>Financial Calendar</p>
+                <p>Management</p>
+                <p>Locations</p>
+            </div>
+            <div class="topics">
+                <h2 class="title">Services</h2>
+                <p>myAudi</p>
+                <p>Press</p>
+                <p>Contact</p>
+                <p>Job portal</p>
+            </div>
+            <div class="topics">
+                <a href="#banner">Back to top Ʌ</a>
+            </div>
         </div>
-        <div class="topics">
-            <h2 class="title">AUDI AG</h2>
-            <p>Audi Report 2024</p>
-            <p>Documents & Policies</p>
-            <p>Financial Calendar</p>
-            <p>Management</p>
-            <p>Locations</p>
-        </div>
-        <div class="topics">
-            <h2 class="title">Services</h2>
-            <p>myAudi</p>
-            <p>Press</p>
-            <p>Contact</p>
-            <p>Job portal</p>
-        </div>
-        <div class="topics">
-            <a href="#banner">Back to top Ʌ</a>
+        <div class="line"></div>
+        <div class="bottom-footer">
+            <span class="copyright">© 2025 AUDI AG. All rights reserved</span>
+            <ul>
+                <li>Legal Notice</li>
+                <li>Legal</li>
+                <li>Whistleblower System</li>
+                <li>Privacy Policy</li>
+                <li>Cookie Policy</li>
+                <li>Cookie Consent Options</li>
+            </ul>
+            <div class="lang-button">
+                <button>English</button>
+            </div>
         </div>
     </section>
+    <?php get_footer();?>
+</div>
 </body>
 </html>
