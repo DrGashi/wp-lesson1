@@ -33,7 +33,7 @@
             <img src="<?php echo esc_url(get_theme_file_uri("images/Innovation.jpg")); ?>" alt="">
         </section>
         <section class="card-section">
-            <h1>Current topics from the world of Audi</h1>
+            <h1>Press releases</h1>
             <div class="cards">
                 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
                 <div class="card">
@@ -41,7 +41,7 @@
                     <span class="date">10/22/2025</span>
                     <p class="title"><?php the_title();?></p>
                     <p class="desc"><?php the_excerpt();?></p>
-                    <a href="<?php the_permalink(); ?>">Read More </a>
+                    <a href="<?php the_permalink(); ?>">To The Press Release </a>
                 </div></article>
                 <?php endwhile; ?>
                 <nav class="pagination">
