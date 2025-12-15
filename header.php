@@ -8,7 +8,7 @@
     <?php wp_head(); ?>
 </head>
 <body>
-    <header class="site-header">
+    <header class="site-header" id="top">
         <nav class="site-nav">
             <?php 
             wp_nav_menu( array(

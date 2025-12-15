@@ -115,7 +115,7 @@
                 <p>Job portal</p>
             </div>
             <div class="topics">
-                <a href="#banner">Back to top Ʌ</a>
+                <a href="#top">Back to top Ʌ</a>
             </div>
         </div>
         <div class="line"></div>
